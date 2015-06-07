@@ -1,0 +1,33 @@
+Title: Train UP Express GTA - MonTra…
+----------
+Short description:
+Train Union Pearson Express du Grand Toronto pour MonTransit.
+Horaires. Nouvelles.
+----------
+What's new in this version?:
+Horaires du 6 Juin 2015 au 6 Juin 2025.
+Tweets de @UPexpressFR.
+----------
+Full description:
+Cette application ajoute les informations du train Union Pearson Express à MonTransit.
+
+L'app contient les horaires de train et les nouvelles de YouTube et @UPexpressFR sur Twitter.
+
+Le train UP Express dessert les stations Union, Bloor, Weston et l'Aéroport Pearson (YYZ) dans le Grand Toronto en Ontario, Canada.
+
+Une fois cette application installée, l'application MonTransit affichera les informations des trains (horaires ...).
+
+Cette application a seulement une icône temporaire et pas d'écran : télécharger l'app MonTransit (gratuit) dans la section "Autres ..." ci-dessous ou en cliquant sur ce lien Google Play http://goo.gl/pCk5mV
+
+Vous pouvez installer cette application sur la carte SD mais ce n'est pas recommandé.
+
+Ces horaires sont générées à partir du fichier GTFS fourni par GO Transit.
+http://www.gotransit.com/timetables/fr/schedules/DeveloperResources.aspx
+
+Cette application est gratuite et open-source : 
+https://github.com/mtransitapps/ca-gta-up-express-train-android
+
+Cette application n'est pas associée à GO Transit et Metrolinx.
+
+Autorisations :
+- Autres : requis pour lire les nouvelles YouTube et Twitter.
