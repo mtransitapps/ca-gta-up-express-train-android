@@ -1,8 +1,8 @@
 Title: Train UP Express GTA - MonTra…
 ----------
 Short description:
-Train Union Pearson Express du Grand Toronto pour MonTransit.
-Horaires. Nouvelles.
+Train Union Pearson Express du Grand Toronto pour MonTransit
+Horaires. Nouvelles
 ----------
 What's new in this version?:
 Horaires du 6 Juin 2015 au 6 Juin 2025.
