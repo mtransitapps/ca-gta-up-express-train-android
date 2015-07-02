@@ -5,7 +5,7 @@ Train Union Pearson Express du Grand Toronto pour MonTransit
 Horaires. Nouvelles
 ----------
 What's new in this version?:
-Horaires du 6 Juin 2015 au 6 Juin 2025.
+Horaires du 6 juin 2015 au 6 juin 2025.
 Tweets de @UPexpressFR.
 ----------
 Full description:
