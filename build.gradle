@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile project(':commons-android')
+    implementation project(':commons-android')
 }
 
 android {
@@ -11,7 +11,7 @@ android {
     Properties projectNameProperties = new Properties()
     projectNameProperties.load(new FileInputStream(file("project_name.properties")))
 
-    def projectName = projectNameProperties["project.name"];
+    def projectName = projectNameProperties["project.name"]
 
     Properties versionProperties = new Properties()
     versionProperties.load(new FileInputStream(file("version.properties")))
@@ -21,6 +21,8 @@ android {
 
     //noinspection GroovyMissingReturnStatement
     defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode versionProperties['version.code'] as Integer
         versionName versionProperties['version.name']
         setProperty("archivesBaseName", "${projectName}_v${versionName}_r${versionCode}")
