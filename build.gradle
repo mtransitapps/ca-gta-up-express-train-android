@@ -17,7 +17,12 @@ android {
     versionProperties.load(new FileInputStream(file("version.properties")))
 
     Properties keysProperties = new Properties()
-    keysProperties.load(new FileInputStream(file("../keys.properties")))
+    def keysPropertiesFile = file("../keys.properties")
+    if (keysPropertiesFile.exists()) {
+        keysProperties.load(new FileInputStream(keysPropertiesFile))
+    }
+
+    def resValueFr = file("res/values-fr")
 
     //noinspection GroovyMissingReturnStatement
     defaultConfig {
@@ -26,15 +31,21 @@ android {
         versionCode versionProperties['version.code'] as Integer
         versionName versionProperties['version.name']
         setProperty("archivesBaseName", "${projectName}_v${versionName}_r${versionCode}")
-        resConfigs "en", "fr"
+        if (resValueFr.exists()) {
+            resConfigs "en", "fr"
+        } else {
+            resConfigs "en"
+        }
     }
 
     signingConfigs {
-        release {
-            storeFile file(keysProperties['key.store'])
-            storePassword keysProperties['key.store.password']
-            keyAlias keysProperties['key.alias']
-            keyPassword keysProperties['key.alias.password']
+        if (keysPropertiesFile.exists()) {
+            release {
+                storeFile file(keysProperties['key.store'])
+                storePassword keysProperties['key.store.password']
+                keyAlias keysProperties['key.alias']
+                keyPassword keysProperties['key.alias.password']
+            }
         }
     }
 
@@ -42,7 +53,9 @@ android {
         //noinspection GroovyMissingReturnStatement
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
+            if (keysPropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
