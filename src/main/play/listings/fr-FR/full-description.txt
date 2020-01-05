@@ -1,14 +1,3 @@
-Title: Train Union Pearson Express -…
-----------
-Short description:
-Train Union Pearson Express du Grand Toronto pour MonTransit
-Horaires. Nouvelles
-----------
-What's new in this version?:
-Horaires du 16 juin 2019 au 4 juin 2022.
-Tweets de @UPexpressFR.
-----------
-Full description:
 Cette application ajoute les informations du train Union Pearson Express à MonTransit.
 
 L'app contient les horaires de train et les nouvelles de YouTube et @UPexpressFR sur Twitter.
@@ -17,7 +6,7 @@ Le train UP Express dessert les stations Union, Bloor, Weston et l'Aéroport Pea
 
 Une fois cette application installée, l'application MonTransit affichera les informations des trains (horaires ...).
 
-Cette application a seulement une icône temporaire et pas d'écran : télécharger l'app MonTransit (gratuit) dans la section "Autres ..." ci-dessous ou en cliquant sur ce lien Google Play http://goo.gl/pCk5mV
+Cette application a seulement une icône temporaire : télécharger l'app MonTransit (gratuit) dans la section "Autres ..." ci-dessous ou en cliquant sur ce lien Google Play http://goo.gl/pCk5mV
 
 Vous pouvez installer cette application sur la carte SD mais ce n'est pas recommandé.
 
