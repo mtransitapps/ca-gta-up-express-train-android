@@ -1,12 +1,12 @@
 This app adds Union Pearson Express train information to MonTransit.
 
-This app provides the train schedule and news from YouTube and @UPexpress on Twitter.
+This app provides the train schedule and news from @UPexpress on Twitter.
 
 UP Express train serves Pearson Airport (YYZ), Weston, Bloor and Union stations in the Greater Toronto Area in Ontario, Canada.
 
 Once this application is installed, the MonTransit app will display trains information (schedule...).
 
-This application only has a temporary icon: download the MonTransit app (free) in the "More ..." section bellow or by following this Google Play link http://goo.gl/pCk5mV
+This application only has a temporary icon: download the MonTransit app (free) in the "More ..." section bellow or by following this Google Play link https://goo.gl/pCk5mV
 
 You can install this application on the SD card but it is not recommended.
 
@@ -19,4 +19,4 @@ https://github.com/mtransitapps/ca-gta-up-express-train-android
 This app is not related with GO Transit and Metrolinx.
 
 Permissions:
-- Other: required to read news from YouTube and Twitter
+- Other: required to read news from Twitter
