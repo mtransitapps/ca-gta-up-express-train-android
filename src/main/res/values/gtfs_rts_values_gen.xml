@@ -2,5 +2,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <integer name="gtfs_rts_agency_type">2</integer>
     <string name="gtfs_rts_timezone">America/Toronto</string>
-    <string name="gtfs_rts_color">555025</string>
+    <string name="gtfs_rts_color">0075D2</string>
 </resources>
