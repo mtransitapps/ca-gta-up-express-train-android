@@ -8,6 +8,10 @@
         <item>UPexpress</item>
         <item>UPexpressFR</item>
     </string-array>
+    <string-array name="twitter_screen_names_id">
+        <item>632453857</item>
+        <item>2285309340</item>
+    </string-array>
     <string-array name="twitter_screen_names_lang">
         <item>en</item>
         <item>fr</item>
