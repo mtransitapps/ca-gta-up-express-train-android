@@ -4,4 +4,6 @@
     <string name="gtfs_status_for_poi_authority">@string/gtfs_rts_authority</string>
     <string name="gtfs_rts_contact_us">https://www.upexpress.com/CustomerSupport/ContactUs</string>
     <string name="gtfs_rts_contact_us_fr">https://www.upexpress.com/CustomerSupport/ContactUs?lng=fr</string>
+    <string name="gtfs_rts_fares">https://www.upexpress.com/en/ways-to-pay</string>
+    <string name="gtfs_rts_fares_fr">https://www.upexpress.com/fr/facons-de-payer</string>
 </resources>
