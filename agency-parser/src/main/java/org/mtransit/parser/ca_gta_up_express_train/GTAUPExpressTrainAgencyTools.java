@@ -22,11 +22,6 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 		new GTAUPExpressTrainAgencyTools().start(args);
 	}
 
-	@Override
-	public boolean defaultExcludeEnabled() {
-		return true;
-	}
-
 	@Nullable
 	@Override
 	public List<Locale> getSupportedLanguages() {
@@ -79,6 +74,7 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 		return true;
 	}
 
+	@SuppressWarnings("SpellCheckingInspection")
 	private static final Pattern AEROPORT = Pattern.compile("(a[e|é]roport)", Pattern.CASE_INSENSITIVE);
 	private static final Pattern GARE = Pattern.compile("(gare)", Pattern.CASE_INSENSITIVE);
 
@@ -92,12 +88,12 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 		tripHeadsign = UP_EXPRESS.matcher(tripHeadsign).replaceAll(EMPTY);
 		tripHeadsign = STATION.matcher(tripHeadsign).replaceAll(EMPTY);
 		tripHeadsign = CleanUtils.cleanStreetTypes(tripHeadsign);
-		return CleanUtils.cleanLabel(tripHeadsign);
+		return CleanUtils.cleanLabel(getFirstLanguageNN(), tripHeadsign);
 	}
 
 	private static final Pattern STATION = Pattern.compile("(station)", Pattern.CASE_INSENSITIVE);
 
-	private static final Pattern UP_EXPRESS_GO = Pattern.compile("(up express|up|go[/]?)", Pattern.CASE_INSENSITIVE);
+	private static final Pattern UP_EXPRESS_GO = Pattern.compile("(up express|up|go/?)", Pattern.CASE_INSENSITIVE);
 
 	@NotNull
 	@Override
@@ -105,7 +101,7 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 		gStopName = STATION.matcher(gStopName).replaceAll(EMPTY);
 		gStopName = UP_EXPRESS_GO.matcher(gStopName).replaceAll(EMPTY);
 		gStopName = CleanUtils.cleanStreetTypes(gStopName);
-		return CleanUtils.cleanLabel(gStopName);
+		return CleanUtils.cleanLabel(getFirstLanguageNN(), gStopName);
 	}
 
 	private static final String STOP_CODE_WESTON = "WE";
@@ -116,10 +112,12 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 	private static final int STOP_ID_PEARSON = 10002;
 	private static final String STOP_CODE_BLOOR = "BL";
 	private static final int STOP_ID_BLOOR = 10003;
+	private static final String STOP_CODE_MOUNT_DENIS = "MD";
+	private static final int STOP_ID_MOUNT_DENIS = 10004;
 
 	@Override
 	public int getStopId(@NotNull GStop gStop) {
-		//noinspection deprecation
+		//noinspection DiscouragedApi
 		final String stopId = gStop.getStopId();
 		switch (stopId) {
 		case STOP_CODE_WESTON:
@@ -130,8 +128,10 @@ public class GTAUPExpressTrainAgencyTools extends DefaultAgencyTools {
 			return STOP_ID_PEARSON;
 		case STOP_CODE_BLOOR:
 			return STOP_ID_BLOOR;
+		case STOP_CODE_MOUNT_DENIS:
+			return STOP_ID_MOUNT_DENIS;
 		default:
-			throw new MTLog.Fatal("Unexpected stop ID for %s!", gStop);
+			throw new MTLog.Fatal("Unexpected stop ID for %s!", gStop.toStringPlus(true));
 		}
 	}
 }
