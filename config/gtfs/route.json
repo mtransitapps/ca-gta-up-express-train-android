@@ -1,0 +1,56 @@
+{
+    "default_route_id_enabled": true,
+    "use_route_short_name_for_route_id": true,
+    "route_short_name_to_route_id_configs": [
+        {
+            "route_short_name": "UP",
+            "route_id": 0
+        }
+    ],
+    "default_route_long_name_enabled": true,
+    "direction_finder_enabled": true,
+    "trip_headsign_remove_via": true,
+    "trip_headsign_cleaners": [
+        {
+            "regex": "(a[e|é]roport)",
+            "ignore_case": true,
+            "comment": "remove French translation"
+        },
+        {
+            "regex": "(gare)",
+            "ignore_case": true
+        },
+        {
+            "regex": "(UP Express)",
+            "ignore_case": true
+        }
+    ],
+    "stop_id_not_supported_configs": [
+        {
+            "original_stop_id": "WE",
+            "stop_id_int": 10000
+        },
+        {
+            "original_stop_id": "UN",
+            "stop_id_int": 10001
+        },
+        {
+            "original_stop_id": "PA",
+            "stop_id_int": 10002
+        },
+        {
+            "original_stop_id": "BL",
+            "stop_id_int": 10003
+        },
+        {
+            "original_stop_id": "MD",
+            "stop_id_int": 10004
+        }
+    ],
+    "stop_name_cleaners": [
+        {
+            "regex": "(up express|up|go/?)",
+            "ignore_case": true
+        }
+    ]
+}
